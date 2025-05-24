@@ -81,7 +81,6 @@
 
 /// POSEIDONS PIKE 
 
-
 ["POSEIDONS PIKE", "1 - Initial Briefing Dead drop",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -95,8 +94,6 @@
 
 }] call zen_custom_modules_fnc_register;
 
-
-
 ["POSEIDONS PIKE", "3 - Upload Intel complete, RTB",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -109,6 +106,20 @@
     ], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
 
 }] call zen_custom_modules_fnc_register;
+
+["POSEIDONS PIKE", "6 - Rebrief Bin Hoden decrypted",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+    [
+        ["SEAL-Actual, HAWK-One, this is OVERLORD. Full coordinate set for BIN HODENS compound decrypted. All elements RTB immediately for sand-table layout and re-brief. OVERLORD OUT.", 
+        "intel_6_rebrief",
+        14,
+        true
+    ], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
+
+}] call zen_custom_modules_fnc_register;
+
 
 
 
