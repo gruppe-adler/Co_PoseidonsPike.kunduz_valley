@@ -4,3 +4,6 @@
 */
 
 #include "scripts\sebs_briefing_table\cfgFunctions.hpp"
+#include "grad_grasscutter\cfgFunctions.hpp"
+#include "grad_zeus\cfgFunctions.hpp"
+#include "grad_vehicleHealing\cfgFunctions.hpp"

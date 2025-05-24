@@ -2,3 +2,113 @@
 *   Hier können eigene Sounds eingebunden werden.
 *   Ist in CfgSounds included.
 */
+
+class intel_1_dropbox
+{
+    name = "intel_1_dropbox";
+    sound[] = {"USER\sounds\intel_1_dropbox.ogg", 5, 1, 200};
+    titles[] = {0, ""};
+};
+
+class intel_upload_complete
+{
+    name = "intel_upload_complete";
+    sound[] = {"USER\sounds\intel_upload_complete.ogg", 5, 1, 200};
+    titles[] = {0, ""};
+};
+
+
+class light_on_1
+{
+    name = "light_on_1";
+    sound[] = {"USER\sounds\light_on_1.ogg", 1, 1, 200};
+    titles[] = {0, ""};
+};
+
+class light_on_2
+{
+    name = "light_on_2";
+    sound[] = {"USER\sounds\light_on_2.ogg", 1, 1, 200};
+    titles[] = {0, ""};
+};
+
+class light_on_3
+{
+    name = "light_on_3";
+    sound[] = {"USER\sounds\light_on_3.ogg", 1, 1, 200};
+    titles[] = {0, ""};
+};
+
+
+class remote_start
+{
+    name = "remote_start";
+    sound[] = {"USER\sounds\remote_start.ogg", 1, 1, 200};
+    titles[] = {0, ""};
+};
+
+class remote_end
+{
+    name = "remote_end";
+    sound[] = {"USER\sounds\remote_end.ogg", 1, 1, 200};
+    titles[] = {0, ""};
+};
+
+class garble_long
+{
+    name = "garble_long";
+    sound[] = {"USER\sounds\garble_long.ogg", 1, 1, 200};
+    titles[] = {0, ""};
+};
+
+
+class keypad_1
+{
+    name = "keypad_1";
+    sound[] = {"USER\sounds\keypad_1.ogg", 5, 1, 200};
+    titles[] = {0, ""};
+};
+
+class keypad_2
+{
+    name = "keypad_2";
+    sound[] = {"USER\sounds\keypad_2.ogg", 5, 1, 200};
+    titles[] = {0, ""};
+};
+
+class keypad_3
+{
+    name = "keypad_3";
+    sound[] = {"USER\sounds\keypad_3.ogg", 5, 1, 200};
+    titles[] = {0, ""};
+};
+
+
+class crumple
+{
+    name = "crumple";
+    sound[] = {"USER\sounds\crumple.ogg", 5, 1, 200};
+    titles[] = {0, ""};
+};
+
+
+class arabicsong1
+{
+    name = "arabicsong1";
+    sound[] = {"USER\sounds\arabicsong1.ogg", 5, 1, 200};
+    titles[] = {0, ""};
+};
+
+class arabicsong2
+{
+    name = "arabicsong2";
+    sound[] = {"USER\sounds\arabicsong2.ogg", 5, 1, 200};
+    titles[] = {0, ""};
+};
+
+class prayer2
+{
+    name = "prayer2";
+    sound[] = {"USER\sounds\prayer2.ogg", 5, 1, 200};
+    titles[] = {0, ""};
+};
