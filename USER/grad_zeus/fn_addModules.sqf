@@ -94,18 +94,32 @@
 
 }] call zen_custom_modules_fnc_register;
 
-["POSEIDONS PIKE", "3 - Upload Intel complete, RTB",
+["POSEIDONS PIKE", "2 - Upload Intel complete, RTB",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
     [
         ["SEAL-Actual, HAWK-One, this is OVERLORD. Intel upload confirmed; decryption cycle running. Return to FOB, patch up and await further tasking. OVERLORD OUT.", 
-        "intel_upload_complete",
+        "intel_2_uploadcomplete",
         12,
         true
     ], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
 
 }] call zen_custom_modules_fnc_register;
+
+["POSEIDONS PIKE", "3 - Upload blank",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+    [
+        ["SEAL-Actual, HAWK-One, this is OVERLORD. USB stick is blank—no hidden partitions.  Signal analysis traces the hardware batch to a local firm MEGAHARD DATA-SOLUTIONS; their main office is now marked SPIDER on your maps. Breach the premises, seize drives or paperwork that link the network. OVERLORD OUT.", 
+        "intel_3_uploadempty",
+        26,
+        true
+    ], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
+
+}] call zen_custom_modules_fnc_register;
+
 
 ["POSEIDONS PIKE", "6 - Rebrief Bin Hoden decrypted",
 {

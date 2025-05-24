@@ -10,10 +10,17 @@ class intel_1_dropbox
     titles[] = {0, ""};
 };
 
-class intel_upload_complete
+class intel_2_uploadcomplete
 {
-    name = "intel_upload_complete";
-    sound[] = {"USER\sounds\intel_upload_complete.ogg", 5, 1, 200};
+    name = "intel_2_uploadcomplete";
+    sound[] = {"USER\sounds\intel_2_uploadcomplete.ogg", 5, 1, 200};
+    titles[] = {0, ""};
+};
+
+class intel_3_uploadempty
+{
+    name = "intel_3_uploadempty";
+    sound[] = {"USER\sounds\intel_3_uploadempty.ogg", 5, 1, 200};
     titles[] = {0, ""};
 };
 
