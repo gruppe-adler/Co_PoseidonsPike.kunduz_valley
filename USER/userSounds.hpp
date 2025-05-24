@@ -28,21 +28,21 @@ class intel_3_uploadempty
 class light_on_1
 {
     name = "light_on_1";
-    sound[] = {"USER\sounds\light_on_1.ogg", 1, 1, 200};
+    sound[] = {"USER\sounds\light_on_1.ogg", 3, 1, 200};
     titles[] = {0, ""};
 };
 
 class light_on_2
 {
     name = "light_on_2";
-    sound[] = {"USER\sounds\light_on_2.ogg", 1, 1, 200};
+    sound[] = {"USER\sounds\light_on_2.ogg", 3, 1, 200};
     titles[] = {0, ""};
 };
 
 class light_on_3
 {
     name = "light_on_3";
-    sound[] = {"USER\sounds\light_on_3.ogg", 1, 1, 200};
+    sound[] = {"USER\sounds\light_on_3.ogg", 3, 1, 200};
     titles[] = {0, ""};
 };
 

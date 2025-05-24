@@ -8,3 +8,16 @@ onLoadMission = "";                                                             
 loadScreen = "data\loadpic.paa";                                                // Ladebild
 overviewPicture = "";                                                           // Bild, das in der Missionsauswahl angezeigt wird
 overviewText = "";                                                              // Text, der in der Missionsauswahl angezeigt wird
+
+class CfgIdentities
+{
+	class BinHoden
+	{
+		face = "PersianHead_A3_01";
+		glasses = "";
+		name = "Osama Bin Hoden";
+		nameSound = "Adams";
+		pitch = 1.0;
+		speaker = "Male01ENG";
+	};
+};

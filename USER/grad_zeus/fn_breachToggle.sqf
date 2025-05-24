@@ -2,22 +2,26 @@
 
 params ["_position", "_lock"];
 
-private _actionRadius = 7;
+private _actionradius = 7;
 
-private _lockInt = if (_lock) then { 1 } else { 0 };
-private _types = ["BUILDING", "HOUSE", "CHURCH", "CHAPEL", "BUNKER", "FORTRESS", "VIEW-TOWER", "LIGHTHOUSE", "FUELSTATION", "HOSPITAL", "TOURISM"];
+private _lockint = if (_lock) then {
+    1
+} else {
+    0
+};
+private _types = ["BUILDinG", "HOUSE", "CHURCH", "CHAPEL", "BUNKER", "forTRESS", "VIEW-toWER", "LIGHTHOUSE", "fuelSTATION", "HOSpiTAL", "toURISM"];
 private _amount = 0;
 
-{ 
-	for "_i" from 0 to (count (configfile >> "CfgVehicles" >> typeOf _x >> "UserActions")) do {
-		_x setVariable [format ["bis_disabled_Door_%1", _i], _lockInt, true]
-		_amount = _amount + 1;
-	};
-} forEach (nearestTerrainObjects [_position, _types, _actionRadius] + nearestObjects [_position, _types, _actionRadius]);
+{
+    for "_i" from 0 to (count (configFile >> "Cfgvehicles" >> typeOf _x >> "Useractions")) do {
+        _x setVariable [format ["bis_disabled_door_%1", _i], _lockint, true];
+        _amount = _amount + 1;
+    };
+} forEach (nearestTerrainObjects [_position, _types, _actionradius] + nearestobjects [_position, _types, _actionradius]);
 
-private _hint = str _amount + " doors UNLOCKED";
+private _hint = str _amount + " doors UNlocked";
 if (_lock) then {
-	_hint = str _amount + " doors LOCKED";
+    _hint = str _amount + " doors locked";
 };
 
 _hint call CBA_fnc_notify;
