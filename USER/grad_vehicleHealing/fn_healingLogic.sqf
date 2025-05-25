@@ -57,11 +57,11 @@ private _treatmentItem = "";
 private _availableLimbs = ["leftarm", "rightarm", "leftleg", "rightleg"] select { !([_target, _x] call ace_medical_treatment_fnc_hasTourniquetAppliedTo) };
 switch (true) do {
     // stitching wounds
-    case (true in (ALL_BODY_PARTS apply {[_target, _x] call GRAD_HEALINGMECHANISM_fnc_canStitch})): {
+    case (true in (ALL_BODY_PARTS apply {[_target, _x] call grad_vehiclehealing_fnc_canStitch})): {
         {
-            private _canStitch = [_target, _x] call GRAD_HEALINGMECHANISM_fnc_canStitch;
+            private _canStitch = [_target, _x] call grad_vehiclehealing_fnc_canStitch;
             if (_canStitch) then {
-                [_healer, _target, _x] call GRAD_HEALINGMECHANISM_fnc_surgicalKitProgress;
+                [_healer, _target, _x] call grad_vehiclehealing_fnc_surgicalKitProgress;
                 break;
             };
         } forEach ALL_BODY_PARTS;
@@ -81,7 +81,7 @@ switch (true) do {
         _treatmentArgs = [_target, _selection, "FieldDressing"];
         _treatmentItem = "@bandage";
     };
-    case ((GET_BLOOD_VOLUME(_target) < MINIMUM_BLOOD_FOR_STABLE_VITALS) && !([_target] call GRAD_HEALINGMECHANISM_fnc_isBloodSufficient)): {
+    case ((GET_BLOOD_VOLUME(_target) < MINIMUM_BLOOD_FOR_STABLE_VITALS) && !([_target] call grad_vehiclehealing_fnc_isBloodSufficient)): {
         // Check if patient's blood volume + remaining IV volume is enough to allow the patient to wake up
         private _totalIvVolume = 0; //in ml1
         {

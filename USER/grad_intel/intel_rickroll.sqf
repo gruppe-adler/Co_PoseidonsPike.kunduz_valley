@@ -4,7 +4,7 @@ params ["_monitor"];
 
 if (_monitor distance player > 100) exitWith {};
 
-grad_fps = 1;
+grad_fps = 2;
 
 [{
 	params ["_args", "_handle"];
@@ -21,7 +21,7 @@ grad_fps = 1;
 	if (grad_fps < 25) then {
 		grad_fps = grad_fps + 1;
 	} else {
-		grad_fps = 1;
+		grad_fps = 2;
 	};
 
 	_monitor setObjectTexture ["monitor", "user\grad_intel\rickroll\frame_" + str grad_fps + ".paa"];

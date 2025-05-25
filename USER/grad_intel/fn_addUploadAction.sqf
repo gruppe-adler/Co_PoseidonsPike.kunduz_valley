@@ -34,6 +34,8 @@ if (!(_computer getVariable ["GRAD_intel_upload_done", false])) then {
 	["missionControl_curatorInfo", [player, "intelupload", "complete"]] call CBA_fnc_globalEvent;
 
 	[_target, "USER\grad_intel\intel_rickroll.sqf"] remoteExec ["BIS_fnc_execVM", 0, true];
+
+	playSound3D [getMissionPath "USER\sounds\rickroll.ogg", _target, true, getPosASL _target, 1]; 
 },
  { 
 	params ["_target"];

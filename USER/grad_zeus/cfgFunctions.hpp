@@ -10,5 +10,6 @@ class grad_zeus{
 		class formatRadioMessage;
 		class showRadioMessage;
 		class breachToggle;
+		class layerManagement { postInit = 1; };
 	};
 };

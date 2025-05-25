@@ -17,6 +17,18 @@ if (isServer) then {
         [_vehicle] call grad_vehiclehealing_fnc_addVehicleHeal;
 
     }, true, [], true] call CBA_fnc_addClassEventHandler;
+
+    uh80hangar setVariable ["bis_disabled_door_1", 1, true];
+    uh80hangar setVariable ["bis_disabled_door_2", 1, true];
+    uh80hangar setVariable ["bis_disabled_door_3", 1, true];
+    uh80hangar setVariable ["bis_disabled_door_4", 1, true];
+    uh80hangar setVariable ["bis_disabled_door_5", 1, true];
+    uh80hangar setVariable ["bis_disabled_door_6", 1, true];
+    uh80hangar setVariable ["bis_disabled_door_7", 1, true];
+    uh80hangar setVariable ["bis_disabled_door_8", 1, true];
+    uh80hangar setVariable ["bis_disabled_door_9", 1, true];
+    uh80hangar setVariable ["bis_disabled_door_10", 1, true];
+    uh80hangar setVariable ["bis_disabled_door_11", 1, true];
 };
 
 

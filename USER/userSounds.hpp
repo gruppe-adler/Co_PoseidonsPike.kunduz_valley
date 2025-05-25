@@ -10,6 +10,13 @@ class intel_1_dropbox
     titles[] = {0, ""};
 };
 
+class intel_2_upload
+{
+    name = "intel_2_upload";
+    sound[] = {"USER\sounds\intel_2_upload.ogg", 5, 1, 200};
+    titles[] = {0, ""};
+};
+
 class intel_2_uploadcomplete
 {
     name = "intel_2_uploadcomplete";
@@ -24,12 +31,48 @@ class intel_3_uploadempty
     titles[] = {0, ""};
 };
 
-class intel_upload_running
+class intel_4_task_spider
 {
-    name = "intel_upload_running";
-    sound[] = {"USER\sounds\intel_upload_running.ogg", 1, 1, 200};
+    name = "intel_4_task_spider";
+    sound[] = {"USER\sounds\intel_4_task_spider.ogg", 5, 1, 200};
     titles[] = {0, ""};
 };
+
+class intel_5_task_track
+{
+    name = "intel_5_task_track";
+    sound[] = {"USER\sounds\intel_5_task_track.ogg", 5, 1, 200};
+    titles[] = {0, ""};
+};
+
+class intel_6_rebrief
+{
+    name = "intel_6_rebrief";
+    sound[] = {"USER\sounds\intel_6_rebrief.ogg", 5, 1, 200};
+    titles[] = {0, ""};
+};
+
+class intel_9a_crashland
+{
+    name = "intel_9a_crashland";
+    sound[] = {"USER\sounds\intel_9a_crashland.ogg", 5, 1, 200};
+    titles[] = {0, ""};
+};
+
+class intel_9b_land
+{
+    name = "intel_9b_land";
+    sound[] = {"USER\sounds\intel_9b_land.ogg", 5, 1, 200};
+    titles[] = {0, ""};
+};
+
+class intel_10_returnfob
+{
+    name = "intel_10_returnfob";
+    sound[] = {"USER\sounds\intel_10_returnfob.ogg", 5, 1, 200};
+    titles[] = {0, ""};
+};
+
 
 
 

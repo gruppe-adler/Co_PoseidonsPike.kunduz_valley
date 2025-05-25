@@ -23,7 +23,7 @@ if (!isServer) exitWith {};
 	// if cargo is injured, heal
 	{
 		if (_x call ACE_medical_ai_fnc_isInjured) exitWith {
-			[_pilot, _x] call GRAD_healingMechanism_fnc_healingLogic;
+			[_pilot, _x] call grad_vehicleHealing_fnc_healingLogic;
 		};
 	} forEach (allPlayers select {objectParent _x == _vehicle});
 

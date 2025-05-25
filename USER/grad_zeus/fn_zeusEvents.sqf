@@ -40,8 +40,21 @@ if (!isServer) exitWith {};
             _message = format ["%1 intel upload: %2", [_unit, false, true] call ace_common_fnc_getName, _text];
             _color = [0.7,0.1,0.1,1];
         };
+        case ("pcaccess"): {
+            _message = format ["%1 pcaccess: %2", [_unit, false, true] call ace_common_fnc_getName, _text];
+            _color = [0.7,0.1,0.1,1];
+        };
+        case ("paperintel"): {
+            _message = format ["%1 paperintel: %2", [_unit, false, true] call ace_common_fnc_getName, _text];
+            _color = [0.7,0.1,0.1,1];
+        };
+        
         case ("susvalue"): {
             _message = format ["%1 : %2", [_unit, false, true] call ace_common_fnc_getName, _text];
+            _color = [0.7,0.1,0.1,1];
+        };
+         case ("trackeradded"): {
+            _message = format ["%1 tracker added: %2", [_unit, false, true] call ace_common_fnc_getName, _text];
             _color = [0.7,0.1,0.1,1];
         };
         default {
