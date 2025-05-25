@@ -21,7 +21,7 @@ if (!isServer) exitWith {};
 
 		{
             _x hideObjectGlobal false;
-        } forEach _objects1;
+        } forEach _objects;
 
 	}, [_objects1, _groups1, _identifier]] call CBA_fnc_waitUntilAndExecute;
 

@@ -6,22 +6,22 @@
 
 
 
-❌ loadout check: IR strobes, breaching equipment, medical stuff
+✅ loadout check: IR strobes, breaching equipment, medical stuff
 
 ✅ medical engine an heli pappen
 
-❌ funksprüche 4-6
+✅ funksprüche 4-6
 
-❌ upload inetcafe
+✅ upload inetcafe
 
-❌ USB stick
+✅ USB stick
 
-❌ stuff im office
+✅ stuff im office
 
-❌ zeus modules: tore
+✅ zeus modules: tore
 
 ❌ placement enemies
 
-❌ objective layers & zeus module enablement
+✅ objective layers & zeus module enablement
 
 ✅ brighter nights

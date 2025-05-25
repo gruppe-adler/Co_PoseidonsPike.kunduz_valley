@@ -9,7 +9,7 @@
 #define BOX_H (UI_GRID_H * 12)  // control is 5 grids high
 
 #define GRAD_RADIOMESSAGE_SENDER 	"OVERLORD"
-#define GRAD_RADIOMESSAGE_PAA 		"USER\rscMessage\logo_jsoc.paa"
+#define GRAD_RADIOMESSAGE_PAA 		"USER\rscMessage\jsoc_command.paa"
 
 params ["_message", ["_sound", "none"], ["_duration", 6], ["_isKraken", true], ["_seawatchToKraken", false]];
 
