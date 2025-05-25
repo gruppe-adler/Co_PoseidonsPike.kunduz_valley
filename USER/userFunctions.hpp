@@ -7,3 +7,4 @@
 #include "grad_grasscutter\cfgFunctions.hpp"
 #include "grad_zeus\cfgFunctions.hpp"
 #include "grad_vehicleHealing\cfgFunctions.hpp"
+#include "grad_intel\cfgFunctions.hpp"
