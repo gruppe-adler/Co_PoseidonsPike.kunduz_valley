@@ -21,3 +21,64 @@ class CfgIdentities
 		speaker = "Male01ENG";
 	};
 };
+
+
+
+class CfgSFX
+{
+    sounds[] = {};
+
+   
+
+    class prayer2
+    {
+        name = "prayer2";
+        sounds[]={sfxsound};
+        sfxsound[]={"USER\sounds\prayer2.ogg",100,1,500,1,1,1,0};
+        empty[]= {"",0,0,0,0,0,0,0};
+    };    
+
+    
+
+     class arabicsong1
+    {
+        name = "arabicsong1";
+        sounds[]={sfxsound};
+        sfxsound[]={"USER\sounds\arabicsong1.ogg",35,1,150,1,1,1,0};
+        empty[]= {"",0,0,0,0,0,0,0};
+    };
+        
+    class arabicsong2
+    {
+        name = "arabicsong2";
+        sounds[]={sfxsound};
+        sfxsound[]={"USER\sounds\arabicsong2.ogg",35,1,150,1,1,1,0};
+        empty[]= {"",0,0,0,0,0,0,0};
+    };
+};
+
+class CfgVehicles
+{
+  
+  
+
+    class prayer2 // class name to be used with createSoundSource
+    {
+        sound = "prayer2"; // reference to CfgSFX class
+    };
+
+
+    class arabicsong1 // class name to be used with createSoundSource
+    {
+        sound = "arabicsong1"; // reference to CfgSFX class
+    };
+
+    class arabicsong2 // class name to be used with createSoundSource
+    {
+        sound = "arabicsong2"; // reference to CfgSFX class
+    };
+
+ 
+
+
+};

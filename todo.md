@@ -3,6 +3,28 @@
 ---
 
 
+player critical information:
+
+# heli
+* heli: rearm/refuel/repair in base
+
+# medic
+* medic vehicle loop
+
+# breach
+* breach: keine vanilla scrollwheel actions an türen (ace interact)
+* KFJ auch breacher
+* shotgun und breaching zeug in kisten, falls nicht genug
+* test türen in hangar
+
+# intel
+* oft hold/mousewheel action für intel
+* intel/funksprüche sind global
+
+
+
+
+
 
 
 

@@ -21,14 +21,24 @@ if (isServer) then {
     uh80hangar setVariable ["bis_disabled_door_9", 1, true];
     uh80hangar setVariable ["bis_disabled_door_10", 1, true];
     uh80hangar setVariable ["bis_disabled_door_11", 1, true];
+};
 
-    // fix for randomization breaking things
-    [] spawn {
-        sleep 3;
+// fix for randomization breaking things
+[] spawn {
+    sleep 3;
+    if (alive internetcafeuser1) then {
         [internetcafeuser1, "SIT", "NONE", chair1] call BIS_fnc_ambientAnim;
+    };
+    if (alive internetcafeuser2) then {
         [internetcafeuser2, "SIT", "NONE", chair2] call BIS_fnc_ambientAnim;
+    };
+    if (alive internetcafeuser3) then {
         [internetcafeuser3, "SIT", "NONE", chair3] call BIS_fnc_ambientAnim;
+    };
+    if (alive internetcafeuser4) then {
         [internetcafeuser4, "SIT", "NONE", chair4] call BIS_fnc_ambientAnim;
+    };
+    if (alive internetcafeuser5) then {
         [internetcafeuser5, "SIT", "NONE", chair5] call BIS_fnc_ambientAnim;
     };
 };
@@ -48,4 +58,3 @@ if (isServer) then {
     };
     
 }, 1, []] call CBA_fnc_addPerFrameHandler;
-

@@ -136,7 +136,7 @@
 ["POSEIDONS PIKE", "9b - Hold out", {
     params [["_position", [0, 0, 0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
     [["SEAL-Actual, HAWK-One, this is OVERLORD. Militia QRF converging from the highway, ETA three mikes. Hold your perimeter until exfil. Command will dispatch relief. OVERLORD out.",
-    "intel_9b_hold", 11, true], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
+    "intel_9b_land", 11, true], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
 }] call zen_custom_modules_fnc_register;
 
 
