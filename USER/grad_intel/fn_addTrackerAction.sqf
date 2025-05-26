@@ -1,6 +1,7 @@
-["LandVehicle", "init", {
-        params ["_vehicle"];
+["Car", "init", {
+        params [["_vehicle", objNull]];
 
+        diag_log format ["added tracker action to %1", _vehicle];
         [_vehicle] call grad_intel_fnc_addTrackerToVehicle;
 
 }, true, [], true] call CBA_fnc_addClassEventHandler;

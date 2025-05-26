@@ -2,30 +2,31 @@ params ["_intel"];
 
 
 private _text = "\n\n\n\n
-----------------------------------------------------------------------\n
-MEGAHARD / HAND CARRY - DO NOT RADIO\n
-----------------------------------------------------------------------\n
-REF  : K-Δ / RAVEN STRING\n
-DATE : 25 MAY 25 - 1954Z\n
-FROM : MACROHARD IMAGING CELL\n
-TO   : OP-G HUMINT / O.BH\n
+        ---------------------------------------------------------\n
+        SPAREBYTE / HAND CARRY - EYES ONLY\n
+        ---------------------------------------------------------\n
+        REF  : PAK/LOVE / BAZAAR BOUQUET\n
+        DATE : 26 MAY 25 - 2150Z\n
+        FROM : CELL SHENANIGANS\n
+        TO   : OP-L HUMINT / A. Hamdullilah\n
 \n
-PAYLOAD FOLLOWS (B64 / KEY:   RAVEN22 ):\n
-\n
-    MDQzIDA0NA==\n
-\n
-HANDLER NOTES\n
-•  Burn copy after one-time use.\n
-•  Courier-Bravo to confirm receipt by dropping empty USB at\n
-   BAZAAR collection point.\n
-----------------------------------------------------------------------\n
+        My dearest Gulrukh,\n
+        I burn for you like a roadside matchstick,\n
+        Even the dust-choked winds of Kandahar fail to smother this flame.\n
+        Your smile hides more danger than a checkpoint at dawn:\n
+        I'd brave a thousand curfews just to glimpse your jalebi-sweet grin.\n
+        Yet they say a man in these parts must own goats, land, and a patron;\n
+        I only possess this battered pen and the ghost of my last paycheck.\n
+        If love were weapons-grade, I'd rain poetry over Peshawar—\n
+        But instead, I'm stuck crafting verses in the dark,\n
+        Hoping you find this note
 \n\n\n
 ";
 
 
 
 
-private _texture = "#(rgb,2048,2048,3)text(0,0,""LucidaConsoleB"",0.02,""#ffffff"",""#000000""," + _text + ")";
+private _texture = "#(rgb,2048,2048,3)text(0,0,""LucidaConsoleB"",0.018,""#ffffff"",""#000000""," + _text + ")";
 _intel setObjectTexture ["camo", _texture];
 
 _intel setvariable ["bis_fnc_initInspectable_data",[_texture,_text,"",1]];
@@ -64,7 +65,7 @@ if (isnil {_intel getvariable "bis_fnc_initInspectable_actionID"}) then {
         //--- 8: Code Completed
         {
             [_this select 0,true] call bis_fnc_initInspectable;
-            ["missionControl_curatorInfo", [player, "paperintel", "complete"]] call CBA_fnc_globalEvent;
+            ["missionControl_curatorInfo", [player, "paperintel3", "complete"]] call CBA_fnc_globalEvent;
         },
 
         //--- 9: Code Interrupted

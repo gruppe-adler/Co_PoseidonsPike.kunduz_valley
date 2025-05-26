@@ -45,7 +45,15 @@ if (!isServer) exitWith {};
             _color = [0.7,0.1,0.1,1];
         };
         case ("paperintel"): {
-            _message = format ["%1 paperintel: %2", [_unit, false, true] call ace_common_fnc_getName, _text];
+            _message = format ["%1 paperintel REAL: %2", [_unit, false, true] call ace_common_fnc_getName, _text];
+            _color = [0.7,0.1,0.1,1];
+        };
+         case ("paperintel2"): {
+            _message = format ["%1 paperintel DECOY: %2", [_unit, false, true] call ace_common_fnc_getName, _text];
+            _color = [0.7,0.1,0.1,1];
+        };
+         case ("paperintel3"): {
+            _message = format ["%1 paperintel DECOY2: %2", [_unit, false, true] call ace_common_fnc_getName, _text];
             _color = [0.7,0.1,0.1,1];
         };
         

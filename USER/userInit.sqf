@@ -10,14 +10,6 @@ if (isServer) then {
     internetcafe animatesource ["Door_4", 1, true]; 
     internetcafe animatesource ["Door_5", 1, true];
 
-    // add healing in vehicles
-    ["Air", "init", {
-        params ["_vehicle"];
-
-        [_vehicle] call grad_vehiclehealing_fnc_addVehicleHeal;
-
-    }, true, [], true] call CBA_fnc_addClassEventHandler;
-
     uh80hangar setVariable ["bis_disabled_door_1", 1, true];
     uh80hangar setVariable ["bis_disabled_door_2", 1, true];
     uh80hangar setVariable ["bis_disabled_door_3", 1, true];
@@ -29,6 +21,16 @@ if (isServer) then {
     uh80hangar setVariable ["bis_disabled_door_9", 1, true];
     uh80hangar setVariable ["bis_disabled_door_10", 1, true];
     uh80hangar setVariable ["bis_disabled_door_11", 1, true];
+
+    // fix for randomization breaking things
+    [] spawn {
+        sleep 3;
+        [internetcafeuser1, "SIT", "NONE", chair1] call BIS_fnc_ambientAnim;
+        [internetcafeuser2, "SIT", "NONE", chair2] call BIS_fnc_ambientAnim;
+        [internetcafeuser3, "SIT", "NONE", chair3] call BIS_fnc_ambientAnim;
+        [internetcafeuser4, "SIT", "NONE", chair4] call BIS_fnc_ambientAnim;
+        [internetcafeuser5, "SIT", "NONE", chair5] call BIS_fnc_ambientAnim;
+    };
 };
 
 
@@ -46,3 +48,4 @@ if (isServer) then {
     };
     
 }, 1, []] call CBA_fnc_addPerFrameHandler;
+

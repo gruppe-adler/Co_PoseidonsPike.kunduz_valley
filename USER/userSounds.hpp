@@ -170,3 +170,10 @@ class prayer2
     sound[] = {"USER\sounds\prayer2.ogg", 5, 1, 200};
     titles[] = {0, ""};
 };
+
+class buzz
+{
+    name = "buzz";
+    sound[] = {"USER\sounds\buzz.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};

@@ -2,30 +2,34 @@ params ["_intel"];
 
 
 private _text = "\n\n\n\n
-----------------------------------------------------------------------\n
-MEGAHARD / HAND CARRY - DO NOT RADIO\n
-----------------------------------------------------------------------\n
-REF  : K-Δ / RAVEN STRING\n
-DATE : 25 MAY 25 - 1954Z\n
-FROM : MACROHARD IMAGING CELL\n
-TO   : OP-G HUMINT / O.BH\n
+        ------------------------------------------------------\n
+        SPAREBYTE / HAND CARRY - EYES ONLY\n
+        ------------------------------------------------------\n
+        REF  : PAK/LOVE2 / MOTHERLOAD\n
+        DATE : 26 MAY 25 - 2205Z\n
+        FROM : BLACKBYTE HUMINT CELL\n
+        TO   : OP-L HUMINT / A. Hamdullilah\n
 \n
-PAYLOAD FOLLOWS (B64 / KEY:   RAVEN22 ):\n
+        My sweetest Gulrukh,\n
+        Each dawn I long to flee this courier life for your laughter,\n
+        Yet my mother clings to my sleeve as if I were made of glass.\n
+        \Stay with the network, she wails,we need you to deliver our hopes.\n
+        And my father—God bless his stubborn bones—\n
+        Insists a son's honor is tied to every package he carries,\n
+        Not to the promises he breaks chasing love.\n
+        They've drafted my destiny in ink thicker than bazaar oil—\n
+        But here in the silent hours, pen in hand, I rewrite it all for you.\n
+        Forgive me if this letter smells of ambush and regret,\n
+        For the only raid I plan now is storming your smile.\n
 \n
-    MDQzIDA0NA==\n
-\n
-HANDLER NOTES\n
-•  Burn copy after one-time use.\n
-•  Courier-Bravo to confirm receipt by dropping empty USB at\n
-   BAZAAR collection point.\n
-----------------------------------------------------------------------\n
+        --------------------------------------------------------\n
 \n\n\n
 ";
 
 
 
 
-private _texture = "#(rgb,2048,2048,3)text(0,0,""LucidaConsoleB"",0.02,""#ffffff"",""#000000""," + _text + ")";
+private _texture = "#(rgb,2048,2048,3)text(0,0,""LucidaConsoleB"",0.018,""#ffffff"",""#000000""," + _text + ")";
 _intel setObjectTexture ["camo", _texture];
 
 _intel setvariable ["bis_fnc_initInspectable_data",[_texture,_text,"",1]];
@@ -64,7 +68,7 @@ if (isnil {_intel getvariable "bis_fnc_initInspectable_actionID"}) then {
         //--- 8: Code Completed
         {
             [_this select 0,true] call bis_fnc_initInspectable;
-            ["missionControl_curatorInfo", [player, "paperintel", "complete"]] call CBA_fnc_globalEvent;
+            ["missionControl_curatorInfo", [player, "paperintel2", "complete"]] call CBA_fnc_globalEvent;
         },
 
         //--- 9: Code Interrupted
