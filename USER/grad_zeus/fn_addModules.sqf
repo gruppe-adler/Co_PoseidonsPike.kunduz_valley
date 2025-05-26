@@ -71,6 +71,15 @@
     missionNameSpace setVariable ["terrorcell_enemies", true, true];
 }] call zen_custom_modules_fnc_register;
 
+["POSEIDONS PIKE", "5.5 - Terrorcell Reinfs", {
+    params [["_position", [0, 0, 0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+    
+    missionNameSpace setVariable ["terrorcell_reinforcements", true, true];
+}] call zen_custom_modules_fnc_register;
+
+
+
+
 ["POSEIDONS PIKE", "6 - Rebrief Bin Hoden decrypted", {
     params [["_position", [0, 0, 0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
     [["SEAL-Actual, HAWK-One, this is OVERLORD. Full coordinate set for Bin HODENS compound decrypted. All elements RTB immediately for sand-table layout and re-brief in front of southern hangar. OVERLORD OUT.",
@@ -134,15 +143,17 @@
 ["POSEIDONS PIKE", "9c - Send police", {
     params [["_position", [0, 0, 0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
     missionNameSpace setVariable ["binhoden_reinforcements", true, true];
-    "sending reinforcements" call CBA_fnc_notify;
+   
 }] call zen_custom_modules_fnc_register;
 
 
 
 ["POSEIDONS PIKE", "10 Congrats and RTB", {
     params [["_position", [0, 0, 0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
-    [["SEAL-Actual, HAWK-One, this is OVERLORD. Geronimo Omega confirmed, Bin Hoden is eliminated. Outstanding work. Entire task force is green across the board. Rally at LZ for final lift; lights cold, two-minute window. JSOC conveys its congratulations. Debrief and cold ones waiting at F.O.B. OVERLORD out.",
-    "intel_10_returnfob", 22, true], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
+    [["SEAL Actual, HAWK One, this is OVERLORD. Geronimo Omega confirmed, Bin Hoden is eliminated. Outstanding work. Entire task force is green across the board. Rally at LZ for final lift; lights cold, two-minute window. JSOC conveys its congratulations. Debrief and cold ones waiting on board the USS Freedom at 065 107. OVERLORD out.",
+    "intel_10_returntouss", 25, true], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
+    missionNameSpace setVariable ["carrier", true, true];
+   
 }] call zen_custom_modules_fnc_register;
 
 

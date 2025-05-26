@@ -20,7 +20,7 @@
 
 ✅ zeus modules: tore
 
-❌ placement enemies
+✅ placement enemies
 
 ✅ objective layers & zeus module enablement
 
@@ -28,4 +28,4 @@
 
 ❌ bin hoden corpse management
 
-❌ waste truck interactions
+✅ waste truck interactions

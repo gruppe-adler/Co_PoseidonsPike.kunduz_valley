@@ -73,7 +73,12 @@ class intel_10_returnfob
     titles[] = {0, ""};
 };
 
-
+class intel_10_returntouss
+{
+    name = "intel_10_returntouss";
+    sound[] = {"USER\sounds\intel_10_returntouss.ogg", 5, 1, 200};
+    titles[] = {0, ""};
+};
 
 
 class light_on_1

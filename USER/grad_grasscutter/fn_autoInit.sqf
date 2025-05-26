@@ -2,7 +2,7 @@
 {
     if(
         markerShape _x == "RECTANGLE" &&
-        toLower _x find "grasscutter" == 1
+        toLower _x find "grasscutter" == 0
     ) then {
         if(hasInterface) then {
             _sin = sin markerDir _x;
