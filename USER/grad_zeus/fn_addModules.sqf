@@ -31,7 +31,7 @@
 ["POSEIDONS PIKE", "1 - initial Briefing Dead drop", {
     params [["_position", [0, 0, 0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
     [["SEAL-Actual, HAWK-One, this is OVERLORD. Task: Surveil identified dead drop code name TRASH. Purpose: Deny pickup by Courier, secure intel. Be-advised: drop-box is a blue plastic bin, Rough position marked on map. Be aware civilian density high. HAWK: insert SEAL no closer than 300 m, run nap-of-the-earth, 30 ft AGL, lights out. SEAL: select overwatch that won't spook target. Engage as soon as package is dropped. OVERLORD OUT.",
-    "intel_1_dropbox", 39, true], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
+    "intel_1_dropbox", 39], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
 }] call zen_custom_modules_fnc_register;
 
 ["POSEIDONS PIKE", "1.5 - Walk To Deaddrop", {
@@ -46,20 +46,20 @@
 ["POSEIDONS PIKE", "2 - Upload intel task", {
     params [["_position", [0, 0, 0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
     [["SEAL-Actual, this is OVERLORD. We have no time to lose, upload the intel at the nearest internet café. HQ needs it now. OVERLORD out.",
-    "intel_2_upload", 8, true], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
+    "intel_2_upload", 8], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
 }] call zen_custom_modules_fnc_register;
 
 ["POSEIDONS PIKE", "3 - Upload blank", {
     params [["_position", [0, 0, 0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
     [["SEAL-Actual, this is OVERLORD. Interim report on upload: file came up empty. Analysts confirm transfer completed; content simply is not there. We're pivoting to the stick itself—SIGINT and forensics are pulling the hardware fingerprint for hidden partitions or firmware traps. Expect update in roughly five mikes. For now, return to FOB. OVERLORD out.",
-    "intel_3_uploadempty", 21, true], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
+    "intel_3_uploadempty", 21], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
     
 }] call zen_custom_modules_fnc_register;
 
 ["POSEIDONS PIKE", "4 - Task Spider", {
     params [["_position", [0, 0, 0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
     [["SEAL-Actual, this is OVERLORD. Update on stick forensics: the controller ID of the stick is a custom run built exclusively for MACROHARD ELECTRONICS. Firmware shows ghost-partitions addressed only by their in-house imaging rig. Task: breach MACROHARD HQ (marker SPIDER added to map), seize any intel that connects us to Bin Hoden. OVERLORD out.",
-    "intel_4_task_spider", 24, true], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM", 0];
+    "intel_4_task_spider", 24], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM", 0];
     "mrk_spider" setMarkerAlpha 1;
     missionNameSpace setVariable ["macrohard_enemies", true, true];
 }] call zen_custom_modules_fnc_register;
@@ -67,7 +67,7 @@
 ["POSEIDONS PIKE", "5 - Task Track", {
     params [["_position", [0, 0, 0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
     [["SEAL-Actual, this is OVERLORD. Find vehicle plate LOSER 1337, hard-plant the Adlell GPS tracker beneath the chassis, then shadow the truck to its final stop. Do not engage or spook the driver. Infiltrate his hideout and find any evidence for the connection to Bin Hoden. OVERLORD out.",
-    "intel_5_task_track", 18, true], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
+    "intel_5_task_track", 18], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
     missionNameSpace setVariable ["terrorcell_enemies", true, true];
 }] call zen_custom_modules_fnc_register;
 
@@ -83,7 +83,7 @@
 ["POSEIDONS PIKE", "6 - Rebrief Bin Hoden decrypted", {
     params [["_position", [0, 0, 0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
     [["SEAL-Actual, HAWK-One, this is OVERLORD. Full coordinate set for Bin HODENS compound decrypted. All elements RTB immediately for sand-table layout and re-brief in front of southern hangar. OVERLORD OUT.",
-    "intel_6_rebrief", 14, true], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
+    "intel_6_rebrief", 14], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
     "mrk_binhoden" setMarkerAlpha 1;
 }] call zen_custom_modules_fnc_register;
 
@@ -130,13 +130,13 @@
 ["POSEIDONS PIKE", "9a - Crash confirm and Hold out", {
     params [["_position", [0, 0, 0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
     [["SEAL-Actual, HAWK-One, this is OVERLORD. ISR feed confirms your Stealth-bird crash-landed inside compound. Task: rig the airframe for total denial. Militia QRF converging from the highway, ETA three mikes. Hold your perimeter until exfil. Command will dispatch relief. OVERLORD out.",
-    "intel_9a_crashland", 19, true], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
+    "intel_9a_crashland", 19], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
 }] call zen_custom_modules_fnc_register;
 
 ["POSEIDONS PIKE", "9b - Hold out", {
     params [["_position", [0, 0, 0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
     [["SEAL-Actual, HAWK-One, this is OVERLORD. Militia QRF converging from the highway, ETA three mikes. Hold your perimeter until exfil. Command will dispatch relief. OVERLORD out.",
-    "intel_9b_land", 11, true], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
+    "intel_9b_land", 11], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
 }] call zen_custom_modules_fnc_register;
 
 
@@ -151,7 +151,7 @@
 ["POSEIDONS PIKE", "10 Congrats and RTB", {
     params [["_position", [0, 0, 0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
     [["SEAL Actual, HAWK One, this is OVERLORD. Geronimo Omega confirmed, Bin Hoden is eliminated. Outstanding work. Entire task force is green across the board. Rally at LZ for final lift; lights cold, two-minute window. JSOC conveys its congratulations. Debrief and cold ones waiting on board the USS Freedom at 065 107. OVERLORD out.",
-    "intel_10_returntouss", 25, true], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
+    "intel_10_returntouss", 25], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
     missionNameSpace setVariable ["carrier", true, true];
    
 }] call zen_custom_modules_fnc_register;

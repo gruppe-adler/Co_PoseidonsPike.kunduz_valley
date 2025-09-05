@@ -11,14 +11,14 @@
 #define GRAD_RADIOMESSAGE_SENDER 	"OVERLORD"
 #define GRAD_RADIOMESSAGE_PAA 		"USER\rscMessage\jsoc_command.paa"
 
-params ["_message", ["_sound", "none"], ["_duration", 6], ["_isKraken", true], ["_seawatchToKraken", false]];
+params ["_message", ["_sound", "none"], ["_duration", 6]];
 
 _duration = _duration + 2; // just a little more than sound for animation etc
 
 private _specialDude = player getVariable ["GRAD_specialDude", false];
 
-// show message to all of the right side PLUS all zeuses
-if (_isKraken != _specialDude && isNull (getAssignedCuratorLogic player)) exitWith {
+// show message to all of but specialdude
+if (!_specialDude && isNull (getAssignedCuratorLogic player)) exitWith {
 	diag_log "message received but not for my team. ignoring message.";
 };
 
