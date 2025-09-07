@@ -8,9 +8,13 @@ if (!isServer) exitWith {};
 
 	private _carrierObjects = [];
 
+	/*
+	// carrier is always visible for now
 	if (_identifier == "carrier") then {
 		_carrierObjects = nearestObjects [[6526.49,10717.9,7.559], [], 500];	
 	};
+	*/
+
 
 	{
 		_x hideObjectGlobal true;
