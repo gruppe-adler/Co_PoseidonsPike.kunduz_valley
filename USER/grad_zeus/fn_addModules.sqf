@@ -59,7 +59,7 @@
 ["POSEIDONS PIKE", "4 - Task Spider", {
     params [["_position", [0, 0, 0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
     [["SEAL-Actual, this is OVERLORD. Update on stick forensics: the controller ID of the stick is a custom run built exclusively for MACROHARD ELECTRONICS. Firmware shows ghost-partitions addressed only by their in-house imaging rig. Task: breach MACROHARD HQ (marker SPIDER added to map), seize any intel that connects us to Bin Hoden. OVERLORD out.",
-    "intel_4_task_spider", 24], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM", 0];
+    "intel_4_task_spider", 24], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
     "mrk_spider" setMarkerAlpha 1;
     missionNameSpace setVariable ["macrohard_enemies", true, true];
 }] call zen_custom_modules_fnc_register;

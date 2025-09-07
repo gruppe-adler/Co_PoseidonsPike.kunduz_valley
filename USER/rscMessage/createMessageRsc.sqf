@@ -18,9 +18,11 @@ _duration = _duration + 2; // just a little more than sound for animation etc
 private _specialDude = player getVariable ["GRAD_specialDude", false];
 
 // show message to all of but specialdude
-if (!_specialDude && isNull (getAssignedCuratorLogic player)) exitWith {
+/*
+if (_specialDude || isNull (getAssignedCuratorLogic player)) exitWith {
 	diag_log "message received but not for my team. ignoring message.";
 };
+*/
 
 "GRAD_COMMAND_MESSAGE" cutRsc ["RscTitleDisplayEmpty", "PLAIN"];
 private _display = uiNamespace getVariable "RscTitleDisplayEmpty";
