@@ -69,6 +69,8 @@
     [["SEAL-Actual, this is OVERLORD. Find vehicle plate LOSER 1337, hard-plant the Adlell GPS tracker beneath the chassis, then shadow the truck to its final stop. Do not engage or spook the driver. Infiltrate his hideout and find any evidence for the connection to Bin Hoden. OVERLORD out.",
     "intel_5_task_track", 18], "USER\rscMessage\createMessageRsc.sqf"] remoteExec ["BIS_fnc_execVM"];
     missionNameSpace setVariable ["terrorcell_enemies", true, true];
+    missionNameSpace setVariable ["tunnel_enemies", true, true];
+
 }] call zen_custom_modules_fnc_register;
 
 ["POSEIDONS PIKE", "5.5 - Terrorcell Reinfs", {
@@ -76,7 +78,6 @@
     
     missionNameSpace setVariable ["terrorcell_reinforcements", true, true];
 }] call zen_custom_modules_fnc_register;
-
 
 
 
@@ -109,9 +110,9 @@
     private _smoke = "test_EmptyObjectForSmoke" createVehicle position _heli;
     _smoke attachTo [_heli ,[0,-6.5,2]];
 
-    _heli setHitpointDamage ["HitVRotor",0.85];
-    _heli setHitpointDamage ["HitBattery",0.85];
-    _heli setHitpointDamage ["HitFuel",1];
+    [_heli, ["hitvrotor", 1]] remoteExec ["setHitpointdamage", owner _heli];
+    [_heli, ["HitBattery", 0.85]] remoteExec ["setHitpointdamage", owner _heli];
+    [_heli, ["HitFuel", 1]] remoteExec ["setHitpointdamage", owner _heli];
 
     _heli allowDamage false;
 

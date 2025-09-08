@@ -18,7 +18,7 @@ if (!isServer) exitWith {};
 
 	{
 		_x hideObjectGlobal true;
-        _x disableAI "PATH";
+        _x disableAI "ALL";
         _x setVariable ["lambs_danger_disableAI", true, true];
         _x setVariable ["lambs_danger_disableGroupAI", true, true];
 	} forEach (_objects1 + _carrierObjects);
@@ -33,6 +33,8 @@ if (!isServer) exitWith {};
 
 		{
             _x hideObjectGlobal false;
+			_x enableAI "ALL";
+			_x disableAI "PATH";
         } forEach (_objects + _carrierObjects);
 
 
@@ -42,6 +44,7 @@ if (!isServer) exitWith {};
 				{
 					private _vehicle = _x;
 					if (_vehicle isKindOf "UK3CB_TKP_O_Lada_Police") then {
+						_vehicle enableAI "ALL";
 						_vehicle enableAI "PATH";
 						{ _x enableAI "PATH"; } forEach units group (driver _vehicle);
 						if (random 4 > 3) then {
@@ -66,6 +69,7 @@ if (!isServer) exitWith {};
 				{
 					private _vehicle = _x;
 					if (_vehicle isKindOf "LandVehicle") then {
+						_vehicle enableAI "ALL";
 						_vehicle enableAI "PATH";
 						{ _x enableAI "PATH"; } forEach units group (driver _vehicle);
 						
@@ -80,4 +84,4 @@ if (!isServer) exitWith {};
 
 	}, [_objects1, _carrierObjects, _groups1, _identifier]] call CBA_fnc_waitUntilAndExecute;
 
-} forEach ["macrohard_enemies", "terrorcell_enemies", "terrorcell_reinforcements", "binhoden_enemies", "binhoden_reinforcements", "carrier"];
+} forEach ["macrohard_enemies", "terrorcell_enemies", "terrorcell_reinforcements", "binhoden_enemies", "binhoden_reinforcements", "tunnel_enemies","carrier"];
